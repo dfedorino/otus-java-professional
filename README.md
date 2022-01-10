@@ -1,1 +1,1 @@
-# otus-java-professional
+# OTUS Java Professional Cource Tasks
