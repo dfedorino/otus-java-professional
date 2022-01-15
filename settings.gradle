@@ -8,3 +8,5 @@
  */
 
 rootProject.name = 'otus-java-professional'
+include 'L01-gradle'
+
