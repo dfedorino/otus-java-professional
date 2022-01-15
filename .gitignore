@@ -37,3 +37,6 @@ gradlew
 gradlew.bat
 !gradle
 
+# Ignore system dependent git attributes
+.gitattributes
+
