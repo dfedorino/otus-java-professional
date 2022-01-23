@@ -4,4 +4,6 @@ plugins {
 
 dependencies {
     implementation project(":L02-gradle02-libWithApi")
+    testImplementation("org.junit.jupiter:junit-jupiter-api") // dependency's version is taken from BOM
+    testImplementation("org.junit.jupiter:junit-jupiter-engine") // dependency's version is taken from BOM
 }
