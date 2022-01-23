@@ -3,5 +3,6 @@ plugins {
 }
 
 dependencies {
-    api 'com.google.guava:guava'
+    api 'com.google.guava:guava' // this dependency is exposed to any apps that use current lib
+    implementation 'org.assertj:assertj-core' // this dependency is NOT exposed to any apps that use current lib
 }
