@@ -33,7 +33,14 @@ allprojects {
             dependency("org.assertj:assertj-core:${Versions.assertj}") // <- overrides version in the BOM file
         }
     }
+
+    configurations.all {
+        resolutionStrategy {
+            failOnVersionConflict()
+        }
+    }
 }
+
 
 //gradle -q hello
 task hello {
