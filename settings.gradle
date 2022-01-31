@@ -11,4 +11,5 @@ rootProject.name = 'otus-java-professional'
 include 'L01-gradle'
 include 'L02-gradle02-libWithApi'
 include 'L02-gradle02-appThatUsesLib'
+include 'L03-generics'
 
