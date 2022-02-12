@@ -1,3 +1,5 @@
+package com.dfedorino.my_testing_framework;
+
 public class MyAssertions {
     public static void verifyEquality(int actual, int expected) {
         if (actual != expected) {
