@@ -42,9 +42,13 @@ public class SimpleTestRunner {
             testMethod.evaluate(testClassInstance);
             appendPassedMessage(report, testMethod, testClassInstance);
         } catch (Throwable thrown) {
-            Class<?> expectedExceptionClass = testMethod.method().getAnnotation(ExpectToThrow.class).expected();
-            if (thrown.getClass().getSimpleName().equals(expectedExceptionClass.getSimpleName())) {
-                appendPassedMessage(report, testMethod, testClassInstance);
+            if (testMethod.method().isAnnotationPresent(ExpectToThrow.class)) {
+                Class<?> expectedExceptionClass = testMethod.method().getAnnotation(ExpectToThrow.class).expected();
+                if (thrown.getClass().getSimpleName().equals(expectedExceptionClass.getSimpleName())) {
+                    appendPassedMessage(report, testMethod, testClassInstance);
+                } else {
+                    appendFailedMessage(report, testMethod, testClassInstance, thrown);
+                }
             } else {
                 appendFailedMessage(report, testMethod, testClassInstance, thrown);
             }
