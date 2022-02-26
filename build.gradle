@@ -31,6 +31,7 @@ allprojects {
         dependencies {
             dependency("com.google.guava:guava:${Versions.guava}") // <- overrides version in the BOM file
             dependency("org.assertj:assertj-core:${Versions.assertj}") // <- overrides version in the BOM file
+            dependency("org.openjdk.jmh:jmh-core:${Versions.jmh}")
         }
     }
 
