@@ -12,4 +12,6 @@ include 'L01-gradle'
 include 'L02-gradle02-libWithApi'
 include 'L02-gradle02-appThatUsesLib'
 include 'L03-generics'
+include 'L04-my-test-framework'
+include 'L05-simple-test-framework'
 
