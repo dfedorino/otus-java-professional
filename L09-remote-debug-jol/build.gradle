@@ -1,0 +1,6 @@
+plugins {
+    id 'java'
+}
+
+group 'com.dfedorino.remote_debug_jol'
+version '1.0'
