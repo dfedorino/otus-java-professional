@@ -15,4 +15,5 @@ include 'L03-generics'
 include 'L04-my-test-framework'
 include 'L05-simple-test-framework'
 include 'L05-collections'
+include 'L05-simple-test-framework'
 
