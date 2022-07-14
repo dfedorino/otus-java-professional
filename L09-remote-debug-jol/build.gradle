@@ -13,3 +13,7 @@ shadowJar {
 }
 
 tasks.build.dependsOn tasks.shadowJar
+
+dependencies {
+    implementation 'org.openjdk.jol:jol-core:0.16'
+}
