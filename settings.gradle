@@ -18,4 +18,5 @@ include 'L05-collections'
 include 'L05-simple-test-framework'
 include 'L08-gc'
 include 'L09-remote-debug-jol'
+include 'L10-bytecode'
 
